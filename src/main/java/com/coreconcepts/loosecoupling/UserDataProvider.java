@@ -1,4 +1,4 @@
-package com.loose.coupling;
+package com.coreconcepts.loosecoupling;
 
 public interface UserDataProvider {
     String getUserDetails();

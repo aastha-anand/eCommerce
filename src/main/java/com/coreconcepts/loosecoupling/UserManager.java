@@ -1,4 +1,4 @@
-package com.loose.coupling;
+package com.coreconcepts.loosecoupling;
 
 public class UserManager {
     private UserDataProvider userDataProvider;
