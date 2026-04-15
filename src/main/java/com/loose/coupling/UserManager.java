@@ -1,8 +1,11 @@
 package com.loose.coupling;
 
 public class UserManager {
-    private UserDatabase userDatabase=new UserDatabase();
+    private UserDataProvider userDataProvider;
+    public UserManager(UserDataProvider userDataProvider){
+        this.userDataProvider=userDataProvider;
+    }
     public String getUserInfo(){
-        return userDatabase.getUserDetails();
+        return userDataProvider.getUserDetails();
     }
 }
